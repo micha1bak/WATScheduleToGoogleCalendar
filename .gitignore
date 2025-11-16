@@ -1,0 +1,24 @@
+# --- Sekrety Google ---
+credentials.json
+token.json
+token.pickle
+
+# --- Środowisko Wirtualne Python ---
+venv/
+.venv/
+env/
+*.env
+
+# --- Pliki Cache Pythona ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Pliki Systemowe ---
+.DS_Store
+Thumbs.db
+
+# --- Pliki popularnych edytorów ---
+.vscode/
+.idea/
