@@ -7,7 +7,7 @@ from typing import List, Dict, Optional, Any
 
 load_dotenv()
 
-class scraper:
+class Scraper:
 
     # 'Optional[str]' oznacza, że typem jest 'str' lub 'None'
     # (bo os.environ.get() zwraca None, jeśli nie znajdzie zmiennej)
@@ -47,7 +47,7 @@ class scraper:
         self.blocks = []
 
     # Filtruje i formatuje bloki zajęciowe
-    def get_blocks_in_range(self) -> List[Dict[str, str]]:
+    def getBlocks(self) -> List[Dict[str, str]]:
 
         # Filtruj lekcje na podstawie daty
         for lesson in self.lessons:
