@@ -1,11 +1,12 @@
 import os
 import requests
+
 from bs4 import BeautifulSoup
 from bs4.element import Tag, ResultSet
 from dotenv import load_dotenv
 from typing import List, Dict, Optional, Any
 
-load_dotenv()
+
 
 class Scraper:
 
@@ -26,6 +27,8 @@ class Scraper:
 
     # Pobiera html i scrapuje bloki lekcyjne
     def __init__(self) -> None:
+
+        load_dotenv()
 
         self.URL = os.environ.get("URL")
         if not self.URL:
@@ -76,7 +79,7 @@ class Scraper:
 
             # 2. Wpisz dane do bloku
             block["date"] = lesson.find("span", class_="date").text
-            block["block_id"] = lesson.find("span", class_="block_id").text[5]
+            block["block_id"] = lesson.find("span", class_="block_id").text
             block["name"] = lesson.find("span", class_="name").text
             block["info"] = lesson.find("span", class_="info").text
             block["color"] = lesson.find("span", class_="colorp").text
