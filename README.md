@@ -85,3 +85,4 @@ Upewnij się, że pliki zawierające Twoje sekrety **nigdy** nie trafią do repo
 ## 🔗 Zasoby
 * https://realpython.com/beautiful-soup-web-scraper-python/
 * https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+* https://developers.google.com/workspace/calendar/api/quickstart/python
